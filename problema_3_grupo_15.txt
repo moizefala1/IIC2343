@@ -1,0 +1,126 @@
+DATA
+num 384
+res 0
+
+CODE
+MOV A, num
+
+SHR B, A 
+MOV (A), c 
+SHL A, B
+SHL B, A
+MOV (B), c
+CMP (A), (B)
+JEQ end
+
+SHL A, B 
+MOV (A), c 
+SHR B, A
+SHR A, B
+SHR B, A
+SHR B, A 
+MOV (B), c
+CMP (A), (B)
+JEQ end
+
+SHR A, B 
+MOV (A), c 
+SHL B, A
+SHL A, B
+SHL B, A
+SHL A, B
+SHL B, A
+SHL B, A 
+MOV (B), c
+CMP (A), (B)
+JEQ end
+
+SHL A, B 
+MOV (A), c 
+SHR B, A
+SHR A, B
+SHR B, A
+SHR A, B
+SHR B, A
+SHR A, B
+SHR B, A
+SHR B, A 
+MOV (B), c
+CMP (A), (B)
+JEQ end
+
+SHR A, B 
+MOV (A), c 
+SHL B, A
+SHL A, B
+SHL B, A
+SHL A, B
+SHL B, A
+SHL A, B
+SHL B, A
+SHL A, B
+SHL B, A
+SHL B, A 
+MOV (B), c
+CMP (A), (B)
+JEQ end
+
+SHL A, B 
+MOV (A), c 
+SHR B, A
+SHR A, B
+SHR B, A
+SHR A, B
+SHR B, A
+SHR A, B
+SHR B, A
+SHR A, B
+SHR B, A
+SHR A, B
+SHR B, A
+SHR B, A 
+MOV (B), c
+CMP (A), (B)
+JEQ end
+
+SHR A, B 
+MOV (A), c 
+SHL B, A
+SHL A, B
+SHL B, A
+SHL A, B
+SHL B, A
+SHL A, B
+SHL B, A
+SHL A, B
+SHL B, A
+SHL A, B
+SHL B, A
+SHL A, B
+SHL B, A
+SHL B, A 
+MOV (B), c
+CMP (A), (B)
+JEQ end
+
+SHL A, B 
+MOV (A), c 
+SHR B, A
+SHR A, B
+SHR B, A
+SHR A, B
+SHR B, A
+SHR A, B
+SHR B, A
+SHR A, B
+SHR B, A
+SHR A, B
+SHR B, A
+SHR A, B
+SHR B, A
+SHR A, B
+SHR B, A
+SHR B, A 
+MOV (B), c
+CMP (A), (B)
+JEQ end
